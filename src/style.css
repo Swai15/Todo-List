@@ -1,0 +1,38 @@
+:root {
+  --header-height: 80px;
+}
+
+* {
+  margin: 0;
+}
+
+.header {
+  height: var(--header-height);
+  width: 100vw;
+  background-color: rgb(255, 194, 235);
+  display: grid;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.header p {
+  font-size: 23px;
+}
+
+.main-container {
+  display: grid;
+  height: calc(100vh - (var(--header-height) + 23px));
+  grid-template-columns: 1fr 2fr;
+}
+
+.container {
+  border: 1px black solid;
+}
+
+.left-container {
+  display: grid;
+}
+
+.subcontainer {
+  border: 1px black solid;
+}
