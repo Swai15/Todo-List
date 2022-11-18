@@ -36,3 +36,23 @@
 .subcontainer {
   border: 1px black solid;
 }
+
+/* LEFT CONTAINER */
+
+/* Filters */
+.filter-title {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.filter {
+  margin: 15px 4px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.filter i {
+  margin: 0px 5px;
+}
+
+/* Projects */
