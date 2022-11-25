@@ -2,8 +2,9 @@
 
 const openProjectModal = document.querySelector(".create-project")
 const modalContainer = document.querySelector(".project-modalContainer")
-const titleValue = document.getElementById(".project-title")
+const titleInput = document.getElementById("project-title")
 const closeProjectModal = document.getElementById("close-projectModal")
+const createProject = document.querySelector(".create-projectItem")
 
 
 export default function createModal() {
@@ -16,6 +17,15 @@ export function closeModal() {
   closeProjectModal.addEventListener("click",() => {
     console.log("close working");
     modalContainer.style.visibility = "hidden"
+  })
+}
+
+export function createProjectItem() {
+  createProject.addEventListener("click",() => {
+    const title = titleInput.value;
+    modalContainer.style.visibility = "hidden"
+    console.log(title);
+    titleInput.value = ""
   })
 }
 

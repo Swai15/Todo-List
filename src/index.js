@@ -1,8 +1,9 @@
-import createModal,{ closeModal } from "./modalPopup";
+import createModal,{ closeModal,createProjectItem } from "./modalPopup";
 
 
 createModal()
 closeModal()
+createProjectItem()
 
 console.log("Working");
 

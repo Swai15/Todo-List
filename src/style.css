@@ -149,3 +149,13 @@
 }
 
 .project-modalBody button {}
+
+.create-projectItem {
+  margin-left: 28%;
+  margin-top: 10px;
+  background-color: rgb(255, 225, 225);
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  cursor: pointer;
+}
