@@ -1,6 +1,7 @@
 :root {
   --header-height: 80px;
   --transition: 0.15s all linear;
+  --header-color: rgb(255, 194, 235);
 }
 
 * {
@@ -10,7 +11,7 @@
 .header {
   height: var(--header-height);
   width: 100vw;
-  background-color: rgb(255, 194, 235);
+  background-color: var(--header-color);
   display: grid;
   align-items: center;
   padding-left: 10px;
@@ -92,11 +93,59 @@
 }
 
 .project-modal {
-  height: 350px;
+  height: 200px;
   width: 450px;
   background-color: white;
   display: grid;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgb(95, 95, 95);
+  border-radius: 8px;
+  grid-template-rows: 1fr 6fr;
 }
+
+.project-modalHeader {
+  background-color: var(--header-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  padding-left: 3px;
+  border-radius: 7px 7px 0 0;
+}
+
+.project-modalHeader i {
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 200px;
+  transition: var(--transition);
+}
+
+.project-modalHeader i:hover {
+  transform: scale(1.1);
+}
+
+.project-modalHeader h4 {}
+
+.project-modalBody {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-modalBody label {
+  margin-left: 30%;
+  cursor: pointer;
+}
+
+.project-modalBody input {
+  width: 200px;
+  height: 30px;
+  border: 2px solid rgb(155, 155, 155);
+
+}
+
+.project-modalBody input:focus {
+  outline: none;
+  border: 2px solid rgb(81, 123, 143);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.445);
+}
+
+.project-modalBody button {}
