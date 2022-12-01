@@ -1,4 +1,4 @@
-//open modal
+//NEW PROJECT MODAL 
 
 const openProjectModal = document.querySelector(".create-project")
 const modalContainer = document.querySelector(".project-modalContainer")
@@ -28,3 +28,20 @@ export function createProjectItem() {
   })
 }
 
+
+// NEW PROJECT ITEM MODAL
+const itemsContainer = document.querySelector(".projectItem-modalContainer")
+const openItems = document.querySelector(".create-projectItems")
+const closeItems = document.getElementById("close-projectModalItem")
+
+export function openModalItems() {
+  openItems.addEventListener("click",() => {
+    itemsContainer.style.visibility = "visible";
+  })
+}
+
+export function closeModalItems() {
+  closeItems.addEventListener("click",() => {
+    itemsContainer.style.visibility = "hidden";
+  })
+}
