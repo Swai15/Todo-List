@@ -15,7 +15,6 @@ export default function createModal() {
 
 export function closeModal() {
   closeProjectModal.addEventListener("click",() => {
-    console.log("close working");
     modalContainer.style.visibility = "hidden"
   })
 }

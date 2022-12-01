@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/cssDesign.js":
+/*!**************************!*\
+  !*** ./src/cssDesign.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ newProjectItem)\n/* harmony export */ });\nconst createProjectItems = document.querySelector(\".create-projectItems\");\r\nconst projectItemTooltip = document.querySelector(\".new-projectItem\");\r\n\r\n\r\n\r\nfunction newProjectItem() {\r\n  createProjectItems.addEventListener(\"mouseover\",() => {\r\n    projectItemTooltip.style.visibility = \"visible\"\r\n  })\r\n\r\n  createProjectItems.addEventListener(\"mouseleave\",() => {\r\n    projectItemTooltip.style.visibility = \"hidden\"\r\n  })\r\n}\n\n//# sourceURL=webpack://todo-list/./src/cssDesign.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modalPopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modalPopup */ \"./src/modalPopup.js\");\n\r\n\r\n\r\n(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\r\n;(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__.closeModal)()\r\n;(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__.createProjectItem)()\r\n\r\nconsole.log(\"Working\");\r\n\r\n// const closeProjectModal = document.getElementById(\"close-projectModal\")\r\n// const modalContainer = document.querySelector(\".project-modalContainer\")\r\n// console.log(\"yes\");\r\n\r\n\r\n// function closeModal() {\r\n//   closeProjectModal.addEventListener(\"click\",() => {\r\n//     console.log(\"close working\");\r\n//     modalContainer.style.visibility = \"hidden\"\r\n//   })\r\n// }\r\n\r\n// closeModal()\r\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modalPopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modalPopup */ \"./src/modalPopup.js\");\n/* harmony import */ var _cssDesign__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cssDesign */ \"./src/cssDesign.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()\r\n;(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__.closeModal)()\r\n;(0,_modalPopup__WEBPACK_IMPORTED_MODULE_0__.createProjectItem)()\r\n;(0,_cssDesign__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()\r\n\r\nconsole.log(\"Working\");\r\n\r\n\r\n\r\n// const closeProjectModal = document.getElementById(\"close-projectModal\")\r\n// const modalContainer = document.querySelector(\".project-modalContainer\")\r\n// console.log(\"yes\");\r\n\r\n\r\n// function closeModal() {\r\n//   closeProjectModal.addEventListener(\"click\",() => {\r\n//     console.log(\"close working\");\r\n//     modalContainer.style.visibility = \"hidden\"\r\n//   })\r\n// }\r\n\r\n// closeModal()\r\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"closeModal\": () => (/* binding */ closeModal),\n/* harmony export */   \"createProjectItem\": () => (/* binding */ createProjectItem),\n/* harmony export */   \"default\": () => (/* binding */ createModal)\n/* harmony export */ });\n//open modal\r\n\r\nconst openProjectModal = document.querySelector(\".create-project\")\r\nconst modalContainer = document.querySelector(\".project-modalContainer\")\r\nconst titleInput = document.getElementById(\"project-title\")\r\nconst closeProjectModal = document.getElementById(\"close-projectModal\")\r\nconst createProject = document.querySelector(\".create-projectItem\")\r\n\r\n\r\nfunction createModal() {\r\n  openProjectModal.addEventListener(\"click\",() => {\r\n    modalContainer.style.visibility = \"visible\"\r\n  })\r\n}\r\n\r\nfunction closeModal() {\r\n  closeProjectModal.addEventListener(\"click\",() => {\r\n    console.log(\"close working\");\r\n    modalContainer.style.visibility = \"hidden\"\r\n  })\r\n}\r\n\r\nfunction createProjectItem() {\r\n  createProject.addEventListener(\"click\",() => {\r\n    const title = titleInput.value;\r\n    modalContainer.style.visibility = \"hidden\"\r\n    console.log(title);\r\n    titleInput.value = \"\"\r\n  })\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/modalPopup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"closeModal\": () => (/* binding */ closeModal),\n/* harmony export */   \"createProjectItem\": () => (/* binding */ createProjectItem),\n/* harmony export */   \"default\": () => (/* binding */ createModal)\n/* harmony export */ });\n//open modal\r\n\r\nconst openProjectModal = document.querySelector(\".create-project\")\r\nconst modalContainer = document.querySelector(\".project-modalContainer\")\r\nconst titleInput = document.getElementById(\"project-title\")\r\nconst closeProjectModal = document.getElementById(\"close-projectModal\")\r\nconst createProject = document.querySelector(\".create-projectItem\")\r\n\r\n\r\nfunction createModal() {\r\n  openProjectModal.addEventListener(\"click\",() => {\r\n    modalContainer.style.visibility = \"visible\"\r\n  })\r\n}\r\n\r\nfunction closeModal() {\r\n  closeProjectModal.addEventListener(\"click\",() => {\r\n    modalContainer.style.visibility = \"hidden\"\r\n  })\r\n}\r\n\r\nfunction createProjectItem() {\r\n  createProject.addEventListener(\"click\",() => {\r\n    const title = titleInput.value;\r\n    modalContainer.style.visibility = \"hidden\"\r\n    console.log(title);\r\n    titleInput.value = \"\"\r\n  })\r\n}\r\n\r\n\n\n//# sourceURL=webpack://todo-list/./src/modalPopup.js?");
 
 /***/ })
 

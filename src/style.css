@@ -159,3 +159,71 @@
   border: 1px solid rgba(0, 0, 0, 0.233);
   cursor: pointer;
 }
+
+/* Right Project Item */
+.projectItem-header {
+  padding-top: 60px;
+  background-color: aqua;
+}
+
+.right-container {
+  display: grid;
+  grid-auto-rows: 50px;
+}
+
+.project-item {
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 3px 4px;
+  border-bottom: 1px rgba(128, 128, 128, 0.096) solid;
+  background-color: rgba(128, 128, 128, 0.178);
+  transition: var(--transition);
+}
+
+.project-item:hover {
+  background-color: rgba(0, 0, 0, 0.151);
+}
+
+.create-projectItems {
+  font-size: 30px;
+  background-color: white;
+  margin-top: 10px;
+  margin-right: 20px;
+  opacity: 0.7;
+  display: grid;
+  justify-content: end;
+
+}
+
+.tooltip-projectItem {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-projectItem p {
+  margin-right: 0px;
+  background-color: rgba(128, 128, 128, 0.377);
+  color: black;
+  border-radius: 4px;
+  width: 90px;
+  height: 25px;
+  font-size: 15px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+
+.create-projectItems i {
+  margin-left: 5px;
+  cursor: pointer;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 30px;
+}
