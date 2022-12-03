@@ -80,6 +80,7 @@
 
 
     <!-- New Project Item modal -->
+    <!-- item modal header -->
     <div class="projectItem-modalContainer">
       <div class="projectItem-modal">
         <div class="projectItem-modalHeader">
@@ -87,8 +88,42 @@
           <i id="close-projectModalItem" class="fa-solid fa-xmark"></i>
         </div>
 
+        <!-- Item modal body -->
         <div class="projectItem-modalBody">
+          <form action="">
+            <div class="project-itemInput item-title">
+              <label for="item-title">Title</label> <br>
+              <input id="item-title" type="text" placeholder="Title...">
+            </div>
 
+            <div class="project-itemInput item-description">
+              <label id="item-description" for="">Description</label><br>
+              <textarea id="item-description" name="" id="" cols="36" rows="3"></textarea>
+            </div>
+
+            <div class="project-itemInput item-date">
+              <label for="item-date">Due Date</label> <br>
+              <input id="item-date" type="date">
+            </div>
+
+            <div class="project-itemInput item-select">
+              <label for="item-select">Priority level</label> <br>
+              <select name="Priority level" id="item-select">
+                <option value="" disabled selected>Choose a priority level for this task</option>
+                <option value="high">Of utmost importance</option>
+                <option value="medium">Just a normal task</option>
+                <option value="low">Not much of a priority</option>
+              </select>
+            </div>
+
+
+
+
+
+          </form>
+          <div class="add-projectItem">
+            <button>Create task</button>
+          </div>
         </div>
       </div>
     </div>
