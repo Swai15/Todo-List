@@ -42,13 +42,21 @@
       </div>
 
       <!-- Projects -->
-      <div class="subcontainer projects">
+      <div class="subcontainer projects-items">
         <div class="project-title">
           <h3>Projects</h3>
         </div>
 
-        <div class="project create-project">
-          <p><i class="fa-solid fa-circle-plus"></i> Create Project</p>
+        <!-- project list -->
+        <div class="projects">
+          <div class="project-list project-dynamic">
+            <p>Project name</p>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
+
+          <div class="project-list create-project">
+            <p><i class="fa-solid fa-circle-plus"></i> Create Project</p>
+          </div>
         </div>
 
       </div>
@@ -56,15 +64,35 @@
 
     <!-- right container -->
     <div class="container ">
-      <div class="projectItem-header"></div>
+      <div class="projectItem-header">
+        <h3 class="projectItem-headerDisplay">
+          Example header
+        </h3>
+      </div>
 
 
       <!-- project items -->
       <div class="right-container">
         <div class="project-item">
+
+          <div class="project-itemCheckbox">
+            <input type="checkbox" id="checkb">
+          </div>
+          <div class="project-itemName">
+            <p>Placeholder Name</p>
+          </div>
+          <div class="project-itemDate">
+            <p> Date </p>
+          </div>
+
+          <div class="project-itemDelete">
+            <i class="fa-solid fa-trash-can"></i>
+          </div>
         </div>
+
         <div class="project-item">
         </div>
+
       </div>
 
       <!-- create project item -->
@@ -97,8 +125,8 @@
             </div>
 
             <div class="project-itemInput item-description">
-              <label id="item-description" for="">Description</label><br>
-              <textarea id="item-description" name="" id="" cols="36" rows="3"></textarea>
+              <label for="item-description" for="">Description</label><br>
+              <textarea id="item-description" name="" cols="36" rows="3"></textarea>
             </div>
 
             <div class="project-itemInput item-date">

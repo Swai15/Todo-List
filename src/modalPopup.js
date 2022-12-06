@@ -5,6 +5,7 @@ const modalContainer = document.querySelector(".project-modalContainer")
 const titleInput = document.getElementById("project-title")
 const closeProjectModal = document.getElementById("close-projectModal")
 const createProject = document.querySelector(".create-projectItem")
+const addItem = document.querySelector(".add-projectItem")
 
 
 export default function createModal() {
@@ -24,6 +25,7 @@ export function createProjectItem() {
     const title = titleInput.value;
     modalContainer.style.visibility = "hidden"
     console.log(title);
+    //reset Value
     titleInput.value = ""
   })
 }
@@ -33,6 +35,11 @@ export function createProjectItem() {
 const itemsContainer = document.querySelector(".projectItem-modalContainer")
 const openItems = document.querySelector(".create-projectItems")
 const closeItems = document.getElementById("close-projectModalItem")
+//project Item form
+const itemTitle = document.getElementById("item-title");
+const itemDescription = document.getElementById("item-description");
+const itemDate = document.getElementById("item-date");
+const itemSelect = document.getElementById("item-select")
 
 export function openModalItems() {
   openItems.addEventListener("click",() => {
@@ -43,5 +50,15 @@ export function openModalItems() {
 export function closeModalItems() {
   closeItems.addEventListener("click",() => {
     itemsContainer.style.visibility = "hidden";
+  })
+}
+
+export function addProjectItems() {
+  addItem.addEventListener("click",() => {
+    itemsContainer.style.visibility = "hidden";
+    itemTitle.value = ""
+    itemDescription.value = ""
+    itemDate.value = ""
+    itemSelect.value = ""
   })
 }

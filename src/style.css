@@ -4,6 +4,8 @@
   --header-color: rgb(255, 194, 235);
   --create-button: rgb(98, 151, 175);
   --create-button-background: rgba(255, 194, 235, 0.219);
+  --backgroundColor-items: rgba(128, 128, 128, 0.178);
+  --backgroundColor-hoverItems: rgba(0, 0, 0, 0.151);
 }
 
 * {
@@ -54,10 +56,14 @@
   font-size: 17px;
   cursor: pointer;
   transition: var(--transition);
+  background-color: var(--backgroundColor-items);
+  height: 30px;
+  border-radius: 4px;
 }
 
 .filter:hover {
   transform: translateX(8px);
+  background-color: var(--backgroundColor-hoverItems);
 
 }
 
@@ -66,9 +72,33 @@
 }
 
 /* Projects */
+.project-title {
+  margin-bottom: 20px;
+}
 
-.project {
-  margin: 15px 4px;
+.projects {
+  display: grid;
+  grid-auto-rows: 60px;
+
+}
+
+.project-list {
+  margin: 10px 4px;
+  background-color: var(--backgroundColor-items);
+  border-radius: 4px;
+  border: 2px black solid;
+
+}
+
+.project-dynamic {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 8fr 1fr;
+}
+
+.project-list i {
+  margin-top: 3px;
+  cursor: pointer;
 }
 
 .project:hover {
@@ -77,6 +107,15 @@
 }
 
 .create-project {
+  display: grid;
+  justify-content: end;
+  align-content: flex-end;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.create-project p {
   cursor: pointer;
 }
 
@@ -112,6 +151,7 @@
   padding-left: 3px;
   border-radius: 7px 7px 0 0;
 }
+
 
 .project-modalHeader i {
   cursor: pointer;
@@ -163,11 +203,16 @@
   cursor: pointer;
 }
 
-/* Right Project Item */
+/* RIGHT PROJECT ITEM */
 .projectItem-header {
-  padding-top: 60px;
+  height: 60px;
   background-color: aqua;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
+
+.projectItem-headerDisplay {}
 
 .right-container {
   display: grid;
@@ -179,12 +224,12 @@
   border-radius: 4px;
   margin: 3px 4px;
   border-bottom: 1px rgba(128, 128, 128, 0.096) solid;
-  background-color: rgba(128, 128, 128, 0.178);
+  background-color: var(--backgroundColor-items);
   transition: var(--transition);
 }
 
 .project-item:hover {
-  background-color: rgba(0, 0, 0, 0.151);
+  background-color: var(--backgroundColor-hoverItems);
 }
 
 .create-projectItems {
@@ -241,7 +286,7 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 .projectItem-modal {
@@ -294,6 +339,8 @@
 
 }
 
+.project-list {}
+
 .add-projectItem {
   display: grid;
   justify-content: end;
@@ -307,6 +354,7 @@
   height: 30px;
   margin-right: 40px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .projectItem-modalBody form input {
@@ -317,4 +365,19 @@
 #item-select {
   width: 304px;
   height: 30px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 26px 3fr 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-item div {
+  border: 1px black solid;
+}
+
+.project-itemCheckbox {
+  padding-left: 7px;
 }

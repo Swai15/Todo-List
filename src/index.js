@@ -1,4 +1,4 @@
-import createModal,{ closeModal,createProjectItem,openModalItems,closeModalItems } from "./modalPopup";
+import createModal,{ closeModal,createProjectItem,openModalItems,closeModalItems,addProjectItems } from "./modalPopup";
 import newProjectItem from "./cssDesign"
 
 
@@ -10,6 +10,7 @@ createProjectItem()
 newProjectItem()
 openModalItems()
 closeModalItems()
+addProjectItems()
 
 console.log("Working");
 

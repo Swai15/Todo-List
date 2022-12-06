@@ -1,14 +1,14 @@
 // Create item menu upon create page
 // Use a class
 
+
 export default class ProjectItem {
-  constructor(name,example) {
+  constructor(name) {
     this.name = name;
-    this.example = example;
   }
 
-  testLog() {
-    console.log(`${this.name} is in perfect ${this.example}`);
+  createProjectItem() {
+
   }
 }
 
