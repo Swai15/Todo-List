@@ -1,5 +1,6 @@
 import createModal,{ closeModal,createProjectItem,openModalItems,closeModalItems,addProjectItems } from "./modalPopup";
 import newProjectItem from "./cssDesign"
+import createProjectFromClass from "./projectItem"
 
 
 
@@ -11,8 +12,9 @@ newProjectItem()
 openModalItems()
 closeModalItems()
 addProjectItems()
+createProjectFromClass()
 
-console.log("Working");
+
 
 
 
